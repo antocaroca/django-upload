@@ -123,5 +123,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/media/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'my_project/static')]
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# directory where the uploaded files are stored. It could ne named whatever
+MEDIA_URL = '/media/'
