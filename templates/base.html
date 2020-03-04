@@ -24,10 +24,16 @@
             <a class="nav-link" href="{% url 'upload' %}">Simple Upload</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Model Forms Upload</a>
+            <a class="nav-link" href="{% url 'upload_book' %}">Model Forms Upload</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Model Forms Upload (CBV)</a>
+            <a class="nav-link" href="{% url 'book_list' %}">Model Forms List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'class_upload_book' %}">Model Forms Upload (CBV)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'class_book_list' %}">Model Forms List (CBV)</a>
           </li>
         </ul>
       </div>
